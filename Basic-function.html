@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nafiul Islam</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+     function Profile(props){
+         return(
+             <div>
+             <h1> Hello,<br></br>This is {props.name}</h1>
+             <p>I am studying {props.edu}. The full meaning of {props.edu} is Computer Science and Engineering. The reason of making this little site is to lear basic of {props.topic}. I leared so many web languages but {props.topic} is best. This is just a basic of how to use function in {props.topic}. Follow my github for more.</p>
+         </div>
+         );
+     }
+     
+      ReactDOM.render(
+        <Profile name="Nafiul" edu="CSE" topic="reactJs"/>,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
